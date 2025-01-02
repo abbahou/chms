@@ -25,6 +25,7 @@ public class Fournisseur extends Application {
         primaryStage.setScene(scene);
 
 
+
         // Afficher la fenêtre
         primaryStage.show();
     }
