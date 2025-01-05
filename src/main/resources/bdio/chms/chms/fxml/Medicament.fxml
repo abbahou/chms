@@ -105,10 +105,10 @@
                 <Label prefHeight="30.0" prefWidth="214.0" style="-fx-font-family: 'Poppins'; -fx-font-size: 20; -fx-text-fill: #5A9BD5;" text="List of Medications" />
                 <TableView fx:id="medicationTable" prefHeight="600.0" prefWidth="800.0" style="-fx-font-family: 'Encode Sans'; -fx-font-size: 14;">
                     <columns>
-                        <TableColumn fx:id="idColumn" prefWidth="100" text="ID" visible="false" />
-                        <TableColumn fx:id="nameColumn" prefWidth="180.0" text="Medication Name" />
+                        <TableColumn fx:id="idColumn" prefWidth="50" text="ID" visible="false" />
+                        <TableColumn fx:id="nameColumn" prefWidth="150" text="Medication Name" />
                         <TableColumn fx:id="descriptionColumn" prefWidth="200.0" text="Description" />
-                        <TableColumn fx:id="expirationTimeColumn" prefWidth="150" text="Expiration Time" />
+                        <TableColumn fx:id="expirationTimeColumn" prefWidth="130" text="Expiration Time  " />
                         <TableColumn fx:id="priceColumn" text="Price (MAD)" />
                         <TableColumn fx:id="typeColumn" prefWidth="150" text="Type" />
                         <TableColumn fx:id="actionColumn" prefWidth="100.0" text="Action" />
@@ -120,15 +120,14 @@
                 <HBox spacing="10" style="-fx-padding: 10;" />
             </VBox>
 
-            <!-- Add/Modify Medications Section -->
             <VBox fx:id="addMedicationSection" opacity="0" style="-fx-background-color: #FFFFFF; -fx-padding: 20; -fx-spacing: 20;" visible="false">
-                <Label fx:id="formTitleLabel" style="-fx-font-family: 'Poppins'; -fx-font-size: 20; -fx-text-fill: #5A9BD5;" text="Add Medication" />
-                <TextField fx:id="idTextField" promptText="Medication ID" style="-fx-font-size: 16;" visible="false" />
-                <TextField fx:id="nameTextField" promptText="Medication Name" style="-fx-font-size: 16;" />
-                <TextField fx:id="descriptionTextField" promptText="Description" style="-fx-font-size: 16;" />
-                <TextField fx:id="expirationTimeTextField" promptText="Expiration Time yyyy-mm-dd" style="-fx-font-size: 16;" />
-                <TextField fx:id="priceTextField" promptText="Price (MAD)" style="-fx-font-size: 16;" />
-                <TextField fx:id="typeTextField" promptText="Type" style="-fx-font-size: 16;" />
+                <Label fx:id="formTitleLabel" maxWidth="500" style="-fx-font-family: 'Poppins'; -fx-font-size: 20; -fx-text-fill: #5A9BD5;" text="Add Medication" />
+                <TextField fx:id="idTextField"  maxWidth="500" promptText="Medication ID" style="-fx-font-size: 16;" visible="false" />
+                <TextField fx:id="nameTextField"  maxWidth="500"  promptText="Medication Name" style="-fx-font-size: 16;" />
+                <TextField fx:id="descriptionTextField" maxWidth="500"  promptText="Description" style="-fx-font-size: 16;" />
+                <TextField fx:id="expirationTimeTextField"  maxWidth="500" promptText="Expiration Time YYYY-MM-DD" style="-fx-font-size: 16;" />
+                <TextField fx:id="priceTextField" maxWidth="500"  promptText="Price (MAD)" style="-fx-font-size: 16;" />
+                <TextField fx:id="typeTextField" maxWidth="500" promptText="Type" style="-fx-font-size: 16;" />
                 <HBox spacing="10" style="-fx-padding: 10;">
                     <Button fx:id="saveMedicationButton" style="-fx-font-family: 'Poppins'; -fx-font-size: 16; -fx-background-color: #5A9BD5; -fx-text-fill: white;" text="Save" />
                     <Button fx:id="closeAddMedicationButton" onAction="#closeAddMedication" style="-fx-font-family: 'Poppins'; -fx-font-size: 16; -fx-background-color: #E57373; -fx-text-fill: white;" text="Close" />
